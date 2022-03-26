@@ -2,6 +2,7 @@ import React from 'react'
 import '../style/Jumbotron.scss'
 import Logo from '../assets/react-burger.png'
 import { Button, Jumbotron } from 'react-bootstrap'
+import Dashboard from '../lib/components/Dashboard'
 
 function HomePage() {
   return (
@@ -14,6 +15,11 @@ function HomePage() {
         <p>
           <Button variant="primary" className='px-5'>Get Started</Button>
         </p>
+        <Dashboard>
+            <Dashboard.Header>
+                <h1>Hello</h1>
+            </Dashboard.Header>
+        </Dashboard>
     </Jumbotron>
   )
 }
