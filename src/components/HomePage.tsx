@@ -1,4 +1,5 @@
 import React from 'react'
+import '../style/Jumbotron.scss'
 import Logo from '../assets/react-burger.png'
 import { Button, Jumbotron } from 'react-bootstrap'
 
