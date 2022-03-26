@@ -4,7 +4,7 @@ import { Navbar, Container, Nav, Form } from 'react-bootstrap'
 
 const NavbarComponent = () => {
     return (
-        <Navbar className='w-100' bg="dark" variant="dark">
+        <Navbar className='w-100' bg="gray-dark" variant="dark">
            <Container className='container-100'>
              <Navbar.Brand>
                <img

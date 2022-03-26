@@ -1,4 +1,10 @@
-$primary: green;
+// overwriting existing colors
+$primary: #2595DB;
+
+// custom colors
+$theme-colors: (
+  'gray-dark': #212529
+);
 
 // Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss'
