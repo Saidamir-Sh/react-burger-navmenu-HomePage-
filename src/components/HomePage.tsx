@@ -4,15 +4,15 @@ import { Button, Jumbotron } from 'react-bootstrap'
 
 function HomePage() {
   return (
-    <Jumbotron className='d-flex flex-column'>
+    <Jumbotron className='d-flex flex-column align-items-center justify-content-center'>
         <img src={Logo} width='15%'/>
-        <h1>Hello, world!</h1>
-        <p>
+        <h1>React Burger</h1>
+        <p className='text-primary'>
           This is a simple hero unit, a simple jumbotron-style component for calling
           extra attention to featured content or information.
         </p>
         <p>
-          <Button variant="primary">Learn more</Button>
+          <Button variant="primary">Get Started</Button>
         </p>
     </Jumbotron>
   )

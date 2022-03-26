@@ -1,11 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './style/_customBootstrap.scss'
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap'
 import NavbarComponent from './components/NavbarComponent';
 import HomePage from './components/HomePage';
-
 
 function App() {
   return (
