@@ -1,6 +1,6 @@
 import React, { FormEvent,  useState } from 'react'
 import './styles/_menu.scss'
-import {AiOutlineCloseCircle} from 'react-icons/ai'
+import './styles/_hamburgerArrows.scss'
 
 interface Props {
     children?: JSX.Element|JSX.Element[]
@@ -25,7 +25,6 @@ const Menu = (props: Props) => {
             <span className="line"></span>
             </div>
         <section id={!isActive ? 'menu' : 'menu-active'} className={props.className}>
-         <AiOutlineCloseCircle  onClick={ToggleMenu}/>
             {props.children}
         </section>
       </>

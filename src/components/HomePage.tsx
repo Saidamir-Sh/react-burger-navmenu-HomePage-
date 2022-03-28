@@ -17,11 +17,10 @@ function HomePage() {
         </p>
         <Menu className='d-flex flex-column align-items-center'>
             <Menu.Header>
-                <h3>React Burger</h3>
+              
             </Menu.Header>
             <Menu.Body>
-                <a href='#'>world</a>
-                <a href='#'>world</a>
+                
             </Menu.Body>
         </Menu>
     </Jumbotron>
