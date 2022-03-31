@@ -1,3 +1,8 @@
+/* Basic style for hamburger menu*/
+.hamburger {
+  position: fixed;
+  z-index: 2;
+}
 .hamburger:hover{
     cursor: pointer;
 }
@@ -11,6 +16,8 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
+/* Open/Close style */
 #hamburger-3.is-active .line:nth-child(1),
 #hamburger-3.is-active .line:nth-child(3){
   width: 27px;

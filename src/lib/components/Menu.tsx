@@ -1,4 +1,4 @@
-import React, { FormEvent,  HtmlHTMLAttributes,  useEffect,  useState } from 'react'
+import React, { useState } from 'react'
 import './styles/_index.scss'
 
 interface Props {
@@ -16,20 +16,6 @@ const Menu = (props: Props) => {
     const ToggleMenu = () => {
     setIsActive(!isActive)
     }
-
-    // changing menu icon position
-    // useEffect(() => {
-    //     let hamburgerMenu = document.getElementById('hamburger-3') as HTMLDivElement
-    //     let menuPosition: string = 'right'
-    //     if(menuPosition === props.position) {
-    //         menuPosition = 'left'
-    //     } else {
-    //         menuPosition = 'right'
-    //     }
-    //     hamburgerMenu.classList.remove(`hamburger-${menuPosition}`)
-    //     hamburgerMenu.classList.add(`hamburger-${props.position}`)
-       
-    // }, [isActive])
 
   return (
       <>
