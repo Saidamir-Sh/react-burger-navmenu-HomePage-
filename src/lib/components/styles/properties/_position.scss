@@ -14,3 +14,15 @@
     bottom: 0;
     transform: translateX(100%);
 }
+.hamburger-right {
+    position: fixed;
+    z-index: 2;
+    right: 2%;
+    top: 2%;
+}
+.hamburger-left {
+    position: fixed;
+    z-index: 2;
+    left: 1%;
+    top: 2%;
+}

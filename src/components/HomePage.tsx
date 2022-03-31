@@ -15,7 +15,7 @@ function HomePage() {
         <p>
           <Button variant="primary" className='px-5'>Get Started</Button>
         </p>
-        <Menu position='right' className='width-20'>
+        <Menu position='left' className='width-40'>
             <Menu.Header>
               
             </Menu.Header>
