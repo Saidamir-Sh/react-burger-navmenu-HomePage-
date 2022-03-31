@@ -1,10 +1,10 @@
 import React, { FormEvent,  useState } from 'react'
-import './styles/_menu.scss'
-import './styles/_hamburgerArrows.scss'
+import './styles/_index.scss'
 
 interface Props {
     children?: JSX.Element|JSX.Element[]
     className?: string
+    position?: string
 }
 
 const Menu = (props: Props) => {
@@ -24,7 +24,7 @@ const Menu = (props: Props) => {
             <span className="line"></span>
             <span className="line"></span>
             </div>
-        <section id={!isActive ? 'menu' : 'menu-active'} className={props.className}>
+        <section id={!isActive ? 'menu' : 'menu-active'} className={`${props.className} ${props.position}`}>
             {props.children}
         </section>
       </>

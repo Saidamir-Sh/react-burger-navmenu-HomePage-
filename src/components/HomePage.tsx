@@ -15,7 +15,7 @@ function HomePage() {
         <p>
           <Button variant="primary" className='px-5'>Get Started</Button>
         </p>
-        <Menu className='d-flex flex-column align-items-center width-20'>
+        <Menu position='right' className='width-20'>
             <Menu.Header>
               
             </Menu.Header>
