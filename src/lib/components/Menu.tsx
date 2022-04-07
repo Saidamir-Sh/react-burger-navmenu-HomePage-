@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/_index.scss'
 
 interface Props {
