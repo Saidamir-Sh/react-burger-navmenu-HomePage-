@@ -2,7 +2,8 @@ import React from 'react'
 import '../style/Jumbotron.scss'
 import Logo from '../assets/react-burger.png'
 import { Button, Jumbotron } from 'react-bootstrap'
-import Menu from '../lib/components/Menu'
+//import Menu from '../lib/components/Menu'
+import Menu from 'react-burger-navimenu'
 
 function HomePage() {
   return (
