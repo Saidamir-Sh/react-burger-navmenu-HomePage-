@@ -3,9 +3,13 @@ import '../style/Jumbotron.scss'
 import Logo from '../assets/react-burger.png'
 import { Button, Jumbotron } from 'react-bootstrap'
 import Menu from '../lib/components/Menu'
+import { useNavigate } from 'react-router'
 //import Menu from 'react-burger-navimenu'
 
 function HomePage() {
+
+  const navigate = useNavigate()
+
   return (
     <Jumbotron className='bg-dark d-flex flex-column align-items-center justify-content-center border-0' style={{overflow: 'hidden'}}>
         <img src={Logo} width='15%'/>
@@ -14,7 +18,7 @@ function HomePage() {
             Simple menu components for React. 
         </p>
         <p>
-          <Button variant="primary" className='px-5'>Get Started</Button>
+          <Button variant="primary" onClick={() => navigate('/usage')} className='px-5'>Get Started</Button>
         </p>
 
 {/* 
