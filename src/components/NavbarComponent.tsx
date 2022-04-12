@@ -1,12 +1,16 @@
 import React from 'react'
 import Logo from '../assets/react-burger.png'
 import { Navbar, Container, Nav, Form } from 'react-bootstrap'
+import { useNavigate } from 'react-router'
 
 const NavbarComponent = () => {
+
+  const navigate = useNavigate()
+
     return (
         <Navbar className='w-100' bg="gray-dark" variant="dark">
            <Container className='container-100'>
-             <Navbar.Brand>
+             <Navbar.Brand onClick={() => navigate('/')} style={{cursor:'pointer'}}>
                <img
                  alt=""
                  src={Logo}
@@ -18,9 +22,8 @@ const NavbarComponent = () => {
              </Navbar.Brand>
               <Nav className="me-auto">
                 <Nav.Link >v0.1.0</Nav.Link>
-                <Nav.Link >Usage</Nav.Link>
-                <Nav.Link >Showcase</Nav.Link>
-                <Nav.Link >NPM</Nav.Link>
+                <Nav.Link onClick={() => navigate('/usage')} >Usage</Nav.Link>
+                <Nav.Link href='https://www.npmjs.com/package/react-burger-navimenu' >NPM</Nav.Link>
               </Nav>
            </Container>
         </Navbar>

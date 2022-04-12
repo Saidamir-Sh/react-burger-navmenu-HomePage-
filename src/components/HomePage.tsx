@@ -7,7 +7,7 @@ import Menu from '../lib/components/Menu'
 
 function HomePage() {
   return (
-    <Jumbotron className='bg-dark d-flex flex-column align-items-center justify-content-center border-0'>
+    <Jumbotron className='bg-dark d-flex flex-column align-items-center justify-content-center border-0' style={{overflow: 'hidden'}}>
         <img src={Logo} width='15%'/>
         <h1 className='text-white font-weight-bold'>React Burger</h1>
         <p className='text-white w-50 text-center font-weight-light' style={{fontSize: '1.5rem'}}>
@@ -16,7 +16,9 @@ function HomePage() {
         <p>
           <Button variant="primary" className='px-5'>Get Started</Button>
         </p>
-        {/* <Menu position='right' className='width-30'>
+
+{/* 
+         <Menu position='right' className='width-30'>
             <Menu.Header>
               
             </Menu.Header>
@@ -24,6 +26,8 @@ function HomePage() {
                 
             </Menu.Body>
         </Menu> */}
+
+
     </Jumbotron>
   )
 }
