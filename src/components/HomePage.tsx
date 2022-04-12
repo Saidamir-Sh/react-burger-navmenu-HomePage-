@@ -2,8 +2,8 @@ import React from 'react'
 import '../style/Jumbotron.scss'
 import Logo from '../assets/react-burger.png'
 import { Button, Jumbotron } from 'react-bootstrap'
-//import Menu from '../lib/components/Menu'
-import Menu from 'react-burger-navimenu'
+import Menu from '../lib/components/Menu'
+//import Menu from 'react-burger-navimenu'
 
 function HomePage() {
   return (
@@ -16,14 +16,14 @@ function HomePage() {
         <p>
           <Button variant="primary" className='px-5'>Get Started</Button>
         </p>
-        <Menu position='right' className='width-30'>
+        {/* <Menu position='right' className='width-30'>
             <Menu.Header>
               
             </Menu.Header>
             <Menu.Body>
                 
             </Menu.Body>
-        </Menu>
+        </Menu> */}
     </Jumbotron>
   )
 }
