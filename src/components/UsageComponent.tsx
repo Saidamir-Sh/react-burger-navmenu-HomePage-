@@ -1,5 +1,6 @@
 import React from 'react'
 import NavbarComponent from './NavbarComponent'
+import { Row, Col, ListGroup } from 'react-bootstrap'
 import '../style/usageComponent.scss'
 import Example from '../assets/example.jpg'
 
@@ -9,6 +10,26 @@ function UsageComponent() {
   return (
     <section>
         <NavbarComponent />
+        <Row>
+            <Col md={3}>
+                <ListGroup variant="flush">
+                    <ListGroup.Item>Cras justo odio</ListGroup.Item>
+                    <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
+                    <ListGroup.Item>Morbi leo risus</ListGroup.Item>
+                    <ListGroup.Item>Porta ac consectetur ac</ListGroup.Item>
+                </ListGroup>
+            </Col>
+            <Col>
+            
+            </Col>
+        </Row>
+    </section>
+  )
+}
+
+export default UsageComponent
+
+/*
         <div className='mx-auto py-5' style={{width: "70%"}}>
             <div>
                 <h1>Introduction</h1>
@@ -37,8 +58,4 @@ function UsageComponent() {
                 <p>You can customize position of menu component by setting <b>position</b> properity to <i>"left"</i> or <i>"right"</i>.You can set width by giving classname "width-(20, 30, 40, etc)"</p>
             </div>
         </div>
-    </section>
-  )
-}
-
-export default UsageComponent
+ */
