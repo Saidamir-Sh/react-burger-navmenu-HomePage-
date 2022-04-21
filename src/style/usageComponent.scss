@@ -2,3 +2,15 @@
     background-color: #212529;
     border-radius: 5px;
 }
+.doc-tabs {
+    a { 
+        text-decoration: none;
+        color: #212529;
+        transition: all .1s ease-in-out;
+        &:hover {
+            color: #2125298e;
+            transition: all .1s ease-in-out;
+        }
+    }
+    
+}

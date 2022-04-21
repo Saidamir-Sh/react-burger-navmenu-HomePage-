@@ -8,7 +8,7 @@ const NavbarComponent = () => {
   const navigate = useNavigate()
 
     return (
-        <Navbar className='w-100' bg="gray-dark" variant="dark">
+        <Navbar className='w-100 fixed-top' bg="gray-dark" variant="dark">
            <Container className='container-100'>
              <Navbar.Brand onClick={() => navigate('/')} style={{cursor:'pointer'}}>
                <img
